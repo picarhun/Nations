@@ -1,0 +1,84 @@
+@import './variables';
+@import '../App.scss';
+
+.navigation {
+  height: 80px;
+
+  .navigation-col {
+    height: 80px;
+  }
+
+  .where {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 20px;
+    color: $VeryDarkBlue2;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .dark {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: $VeryDarkBlue2;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 3px;
+  }
+
+  .moon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+}
+
+// Light dark Mode
+
+#dark .dark {
+  color: $White !important;
+}
+
+#dark .where {
+  color: $White !important;
+}
+
+#dark .navigation {
+  background-color: $DarkBlue;
+  border: none !important;
+  color: $White;
+}
+
+/* mobile  */
+@media only screen and (max-width: 767px) {
+  .where {
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+
+  .country-input {
+    margin-top: 30px;
+  }
+
+  .dark {
+    font-size: 13px;
+  }
+}
+
+/*  tablet  */
+@media only screen and (min-width: 768px) and (max-width: 1223px) {
+  .country-input {
+    margin-top: 48px;
+  }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1224px) and (max-width: 1440px) {
+  .country-input {
+    margin-top: 48px;
+  }
+}

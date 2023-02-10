@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+@import "./scss//variables";
+
+.App {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.back-link {
+  width: 104px !important;
+  height: 32px !important;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 10px;
+  text-align: center;
+  padding: 5px;
+  color: black;
+  margin-right: 6px;
+  cursor: pointer;
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #111517;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+// Light dark Mode
+
+#dark .html {
+  background-color: $VeryDarkBlue;
+}
+
+#light {
+  background-color: $White;
+}
+
+#dark {
+  background-color: $VeryDarkBlue;
+}
+
+#dark .main {
+  background-color: $VeryDarkBlue;
+}
+
+#dark .country-card {
+  background-color: $DarkBlue;
+  color: $White;
+}
+
+#dark .card-title {
+  color: $White;
+}
+
+#dark .search-inputs .search-input {
+  background-color: $DarkBlue;
+}
